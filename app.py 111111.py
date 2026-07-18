@@ -5,6 +5,7 @@ import plotly.graph_objects as go
 import numpy as np
 
 app = dash.Dash(__name__)
+server = app.server
 
 # 이동 중인 입자들 (최대 500개)
 moving_x = np.random.uniform(-1, 5, 500)
